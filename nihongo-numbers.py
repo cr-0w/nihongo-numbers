@@ -28,6 +28,22 @@ def clear():
     else:
         os.system('cls')
 
+# display banner
+def banner():
+    print(Fore.LIGHTYELLOW_EX + 
+          """ 
+    |\     ____
+    | \.-./ .-'
+     \ _  _(
+     | .)(./
+     |   \(         日本語 ヘルパ ! 
+     |     \        (v1.0.0) - cr0w
+     |  \/vvv              
+     |  |__    
+    /      `-. 
+          
+          """)
+
 # generate a random number; ranging by level: easy 1-100 \\ medium 100-1000 \\ hard 1000-10k \\ extreme 10k-100k \\ fluent 100k-maxint.
 def chooseDiff():
     while True:
@@ -124,12 +140,13 @@ def compareValues():
         print(okay, 'you got it right!\n')
         print(table)
     else:
-        print(err, 'sorry! please try again.')
+        print(err, 'sorry! please try again.\n')
         print(info, Fore.LIGHTYELLOW_EX + '{}'.format(randomNumber), Style.RESET_ALL + 'in japanese is:\n')
         print(table)
  
 if __name__ == '__main__':
     clear()
+    banner()
     chooseDiff()
     generateFromDiff()
     userGuess()
