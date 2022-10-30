@@ -62,6 +62,7 @@ def chooseDiff():
                 break
             else:
                 clear()
+                banner()
                 print('\n' + err, 'error. please select one of the following options:' + Fore.LIGHTYELLOW_EX, 'easy, medium, hard, extreme, fluent' + Style.RESET_ALL)
         except KeyboardInterrupt:
             print('\n\n' + info, 'caught user interrupt.' + Fore.LIGHTRED_EX, 'exiting' + Style.RESET_ALL + '...')
