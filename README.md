@@ -17,3 +17,8 @@ Assume that we're given a number like `8`, we can enter in the number in a multi
 <br> In `hiragana (はち)`, `kanji (八)`, or in `romanji (hachi)`.
 
 ![demo](/demo/demo.gif)
+
+### `changelog`
+---
+- `v1.0.1` (fixed a bug that broke the program if you supplied the diff. in all caps)
+- `v1.0.2` (reworked the difficulty options)
