@@ -56,7 +56,7 @@ def chooseDiff():
             print(difficultyTable)
             userChoice = input('\n\r>>> ')
             if userChoice.lower() in availDiffs:
-                userDiff.append(userChoice)
+                userDiff.append(userChoice.lower())
                 userDiffChoice = ' '.join(userDiff)
                 print('\n' + info, 'you selected:' + Fore.LIGHTYELLOW_EX, '{}'.format(userDiffChoice))
                 break
