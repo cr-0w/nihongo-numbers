@@ -16,7 +16,7 @@ python3 nihongo-numbers.py
 Assume that we're given a number like `8`, we can enter in the number in a multitude of different ways. 
 <br> In `hiragana (はち)`, `kanji (八)`, or in `romanji (hachi)`.
 
-![demo](demo.gif)
+![demo](usage.gif)
 
 ### `changelog`
 ---
