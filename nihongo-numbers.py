@@ -52,7 +52,7 @@ def chooseDiff():
             print(okay, 'please select a difficulty:\n')
             # generate table for diffs.
             difficultyTable = PrettyTable(['easy', 'medium', 'hard', 'extreme', 'fluent'])
-            difficultyTable.add_row(['1-100', '100-1k', '1k-10k', '10k-100k', '100k-999m'])
+            difficultyTable.add_row(['1-100', '100-1k', '1k-100k', '100k-1m', '1m-999m'])
             print(difficultyTable)
             userChoice = input('\n\r>>> ')
             if userChoice.lower() in availDiffs:
@@ -83,16 +83,16 @@ def generateFromDiff():
         i = 100
         j = 1000
         generateNumber(i, j)
-    elif userDiff[0] == 'hard': # 1000-10000
+    elif userDiff[0] == 'hard': # 1000-100000
         i = 1000
-        j = 10000
-        generateNumber(i, j)
-    elif userDiff[0] == 'extreme': # 10000-100000
-        i = 10000
         j = 100000
         generateNumber(i, j)
-    elif userDiff[0] == 'fluent': # 100000-999999999
+    elif userDiff[0] == 'extreme': # 100000-1m
         i = 100000
+        j = 1000000
+        generateNumber(i, j)
+    elif userDiff[0] == 'fluent': # 1m-999m
+        i = 1000000
         j = 999999999 # the site is limited to this
         generateNumber(i, j)
 
