@@ -37,11 +37,10 @@ def banner():
      \ _  _(
      | .)(./
      |   \(         日本語 ヘルパ ! 
-     |     \        (v1.0.2) - cr0w
+     |     \        (v1.0.4) - cr0w
      |  \/vvv              
      |  |__    
     /      `-. 
-          
           """)
 
 # generate a random number; ranging by level: easy 1-100 \\ medium 100-1000 \\ hard 1000-10k \\ extreme 10k-100k \\ fluent 100k-maxint.
