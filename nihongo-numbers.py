@@ -23,7 +23,7 @@ availDiffs = ['easy', 'medium', 'hard', 'extreme', 'fluent']
 
 # clear the screen
 def clear():
-    if platform.system == 'Linux':
+    if platform.system() == 'Linux':
         os.system('clear')
     else:
         os.system('cls')
