@@ -24,3 +24,4 @@ Assume that we're given a number like `8`, we can enter in the number in a multi
 - `v1.0.2` (reworked the difficulty options)
 - `v1.0.3` (added banner after clearing screen)
 - `v1.0.4` (removed newline after banner)
+- `v1.0.5` (fixed os-aware clear screen)
